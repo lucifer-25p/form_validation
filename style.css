@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&family=Rancho&display=swap');
+:root{
+    --head-font:'Rancho', cursive;
+    --font:'Glory', sans-serif;
+    --lightcolor: linear-gradient(to left, rgba(235, 99, 156, 0.692),rgba(154, 91, 184, 0.582));
+    --color: linear-gradient(to left, rgba(248, 16, 113, 0.815),rgba(119, 19, 165, 0.801));
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--lightcolor) , url(https://static.vecteezy.com/system/resources/previews/002/099/704/non_2x/mountain-beautiful-landscape-background-design-illustration-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    width: 100vw;
+    font-family: var(--head-font);
+}
+
+.container{
+    background-color: bisque;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(100vw-65vw);
+    max-width: 100%;
+    box-shadow: 0 3px 3px rgba(56, 19, 73, 0.685) ,  0 3.8px 3.9px rgba(56, 19, 73, 0.685),  0 2.3px 3.8px rgba(56, 19, 73, 0.685) ;
+}
+.header{
+    background-image: var(--color);
+    padding: 20px 30px 20px 30px;
+}
+.header h2{
+    color: rgba(26, 26, 26, 0.712);
+    font-family: var(--font);
+    font-size: 25px;
+    text-align: center;
+}
+.form{
+    padding: 40px;
+}
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid rgba(219, 216, 216, 0.925);
+    border-radius: 5px;
+    display: block;
+    font-family: var(--font);
+    font-size: 14px;
+    padding: 7px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form .btn{
+    background: var(--color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.87);
+    display:block;
+    font-family: var(--font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight:bolder;
+    transition: all 1s ease;
+    
+    
+}
+.form .btn:hover{
+    background: linear-gradient(to right, rgba(235, 99, 156, 0.692),rgba(154, 91, 184, 0.582));
+}
